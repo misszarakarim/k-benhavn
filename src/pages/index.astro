@@ -1,9 +1,113 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import Header from "../components/Header.astro";
 ---
 <MainLayout title="Titel">
-	<article>
-		<p>Index indhold</p>
-	</article>
+	
+	<!-- BOXEN -->
+	<section>
+		<h1 class="mb-8 ml-20 text-7xl">Københavnerbilleder</h1>
+
+		<div class="grid grid-cols-2 gap-4 border-8 border-black mx-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+			<div>
+				<img src="../public/kbh1.jpg" alt="">
+			</div>
+            <div class="pl-5">
+                <h2 class="text-4xl pt-32 pb-8 ">Københavnerbilleder - En guide til hipster foto af Sten Simons Køb den før din nabo!</h2>
+				<Button variant="primer" size="medium">Køb nu!</Button>
+			</div>
+		</div>
+	</section>
+
+	<!-- INFOMATION -->
+	<section>
+		<div class="grid grid-cols-2 gap-10 my-60 mx-96">
+			<div>
+				<h2 class="text-4xl font-bold mb-8">Kort om bogen</h2>
+				<p class="leading-7">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!</p>
+			</div>
+
+			<div>
+				<h2 class="text-4xl font-bold mb-8">Quickfacts om bogen</h2>
+				<ul class="leading-9">
+					<li>* Titel: Københavnerbilleder - en guide til hipster foto</li>
+					<li>* Forfatter: Sten Simons</li>
+					<li>* Antal sider: 344</li>
+					<li>* Forlag: Mellem Linjerne</li>
+					<li>* ISBN: 987-6-987654-32-1</li>
+					<li>* Pris: 399.-</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+<!-- BILLEDER - 3 -->
+<section>
+	<div>
+		<img src="" alt="">
+	</div>
+</section>
+
+<!-- FORUM -->
+<section>
+	<div>
+		  <form action="">
+
+        <div>
+            <label for="antalboeger">Antal</label>
+            <input type="number" name="antalboeger" id="antalboeger">
+        </div>
+
+        <div>
+            <span>Levering</span>
+            <input type="radio" name="levering" id="postnord">
+            <label for="postnord">Postnord</label>
+
+            <input type="radio" name="levering" id="afhent">
+            <label for="afhent">Afhent selv</label>
+        </div>
+
+        <div>
+            <label for="fuldenavn">Fuldenavn:</label>
+            <input type="text" name="fuldenavn" id="fuldenavn">
+        </div>
+
+        <div>
+            <label for="adressenavn">Adresse:</label>
+            <input type="text" name="adressenavn" id="adressenavn">
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div>
+            <span>Postnummer og bynavn:</span>
+            <label for="postnummer"></label>
+            <input type="text" name="post" id="postnummer">
+
+            <label for="by"></label>
+            <input type="text" name="bynavn" id="by">
+        </div>
+
+        <div>
+            <label for="telnummer">Telefon:</label>
+            <input type="tel" name="telnummer" id="telnummer">
+        </div>
+
+        <div>
+            <label for="check">Ja tak til nyhedsbreve og tilbud</label>
+            <input type="checkbox" name="check" id="check">
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+
+    </form>
+	</div>
+</section>
+
 </MainLayout>
