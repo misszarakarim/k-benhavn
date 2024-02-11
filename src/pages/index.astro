@@ -6,8 +6,8 @@ import Header from "../components/Header.astro";
 <MainLayout title="Titel">
 	
 	<!-- BOXEN -->
-	<section>
-		<h1 class="mb-8 ml-20 text-7xl">Københavnerbilleder</h1>
+	<section class="boxen">
+		<h1 class="mb-8 ml-20 text-7xl namefade">Københavnerbilleder</h1>
 
 		<div class="grid grid-cols-2 gap-4 border-8 border-black mx-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
 			<div>
@@ -22,7 +22,7 @@ import Header from "../components/Header.astro";
 
 	<!-- INFOMATION -->
 	<section>
-		<div class="grid grid-cols-2 gap-10 my-60 mx-96">
+		<div class="grid grid-cols-2 gap-10 my-40 mx-96">
 			<div>
 				<h2 class="text-4xl font-bold mb-8">Kort om bogen</h2>
 				<p class="leading-7">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!</p>
@@ -30,13 +30,13 @@ import Header from "../components/Header.astro";
 
 			<div>
 				<h2 class="text-4xl font-bold mb-8">Quickfacts om bogen</h2>
-				<ul class="leading-9">
-					<li>* Titel: Københavnerbilleder - en guide til hipster foto</li>
-					<li>* Forfatter: Sten Simons</li>
-					<li>* Antal sider: 344</li>
-					<li>* Forlag: Mellem Linjerne</li>
-					<li>* ISBN: 987-6-987654-32-1</li>
-					<li>* Pris: 399.-</li>
+				<ul class="leading-9 list-disc">
+					<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
+					<li>Forfatter: Sten Simons</li>
+					<li>Antal sider: 344</li>
+					<li>Forlag: Mellem Linjerne</li>
+					<li>ISBN: 987-6-987654-32-1</li>
+					<li>Pris: 399.-</li>
 				</ul>
 			</div>
 		</div>
@@ -44,23 +44,138 @@ import Header from "../components/Header.astro";
 
 <!-- BILLEDER - 3 -->
 <section>
+	<div class="grid grid-cols-3 gap-4 mx-20 mb-40">
+			<img src="../public/kbh3.jpg" alt="">
+			<img src="../public/kbh2.jpg" alt="">
+			<img src="../public/kbh1.jpg" alt="">
+	</div>
+</section>
+
+<!-- ANMELDESLER  -->
+<section class="name2left">
+	<h2 class="font-bold text-4xl ml-20 mb-5">Anmeldelser</h2>
+	
+	<div class="grid grid-cols-3 gap-10 mb-40 mx-20">
+<div>
+	<p class="mb-5 font-bold text-slate-700">5 af 6 stjerner</p>
+	<p class="mb-7">Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.</p>
+	<p class="italic"> Hanne Hovgaard, Berlingeren</p>
+</div>
+
+<div>
+	<p class="mb-5 font-bold text-slate-700">4 af 5 stjerner </p>
+	<p class="mb-7">Teksten er underholdende, og billederne er sku flotte. Hvad mere skal man sige om en fotobog?</p>
+	<p class="italic"> Kim Kloggaard, Fotojournalen.dk</p>
+</div>
+
+<div>
+	<p class="mb-5 font-bold text-slate-700">6 af 6 stjerner </p>
+	<p class="mb-7">Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde.</p>
+	<p class="italic"> Volmer Hansen, Lukkertiden.dk</p>
+</div>
+    </div>
+</section>
+
+<!-- BOGENS KAPITLER  -->
+<section>
+<h2 class="font-bold text-4xl ml-20 mb-5">Bogens kapitler</h2>
+
+<div class="grid grid-cols-2 gap-10 mb-40 mx-20">
 	<div>
-		<img src="" alt="">
+		<p class="mb-3 font-bold text-xl"> Kapitel 1 - Intro til street foto</p>
+		<p class="leading-7">Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.</p>
+	</div>
+
+	<div>
+		<p class="mb-3 font-bold text-xl"> Kapitel 3 - Om at finde det rette motiv</p>
+		<p class="leading-7">Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</p>
+	</div>
+
+	<div>
+		<p class="mb-3 font-bold text-xl"> Kapitel 5 - Analog street foto</p>
+		<p class="leading-7">Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. </p>
+	</div>
+
+	<div>
+		<p class="mb-3 font-bold text-xl"> Kapitel 7 - Kreative teknikker </p>
+		<p class="leading-7">Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</p>
+	</div>
+
+	<div>
+		<p class="mb-3 font-bold text-xl"> Kapitel 2 - Om at skyde street</p>
+		<p class="leading-7">Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
+	</div>
+
+	<div>
+		<p class="mb-3 font-bold text-xl"> Kapitel 4 - Digital street foto</p>
+		<p class="leading-7">De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </p>
+	</div>
+
+	<div>
+		<p class="mb-3 font-bold text-xl"> Kapitel 6 - Om at skyde sort/hvid</p>
+		<p class="leading-7">Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. </p>
+	</div>
+
+	<div>
+		<p class="mb-3 font-bold text-xl"> Kapitel 8 - Kom helt tæt på!</p>
+		<p class="leading-7">Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…</p>
+	</div>
+</div>
+</section>
+
+<!-- FORFATTEREN -->
+<section>
+	<div class="grid grid-cols-2 gap-6 mb-40 mx-80">
+		<div>
+		    <img src="../public/forfatter.jpg" alt="Forfatter">
+		</div>
+
+		<div>
+		    <h1 class="font-bold text-4xl mb-10">Forfatteren</h1>
+		    <p class="mb-5 leading-7">Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”</p>
+	       	<p class="leading-7">Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
+		</div>
+
+	</div>
+</section>
+
+<!-- GALLERI -->
+<section>
+	<h1 class="font-bold text-4xl mb-10 ml-32">Udvalgte billeder fra bogen</h1>
+
+	<div class="grid grid-cols-4 gap-4 mb-40 mx-32">
+        <img src="../public/bog1.jpg" alt="">
+		<img src="../public/bog2.jpg" alt="">
+        <img src="../public/bog3.jpg" alt="">
+	    <img src="../public/bog4.jpg" alt="">
+		<img src="../public/bog5.jpg" alt="">
+		<img src="../public/bog6.jpg" alt="">
+        <img src="../public/bog7.jpg" alt="">
+		<img src="../public/bog8.jpg" alt="">
+	    <img src="../public/bog9.jpg" alt="">
+		<img src="../public/bog10.jpg" alt="">
+		<img src="../public/bog11.jpg" alt="">
+		<img src="../public/bog12.jpg" alt="">
+		<img src="../public/bog13.jpg" alt="">
+		
 	</div>
 </section>
 
 <!-- FORUM -->
 <section>
-	<div>
-		  <form action="">
 
-        <div>
-            <label for="antalboeger">Antal</label>
+<div class="mx-44">
+		<h1 class="font-bold text-4xl mb-10 text-center">Køb bogen!</h1>
+
+		  <form action="" class="mx-80" >
+
+        <div class="grid grid-rows-2">
+            <label for="antalboeger">Antal:</label>
             <input type="number" name="antalboeger" id="antalboeger">
         </div>
-
-        <div>
-            <span>Levering</span>
+		
+        <div class="my-7">
+            <span>Levering:</span>
             <input type="radio" name="levering" id="postnord">
             <label for="postnord">Postnord</label>
 
@@ -68,46 +183,64 @@ import Header from "../components/Header.astro";
             <label for="afhent">Afhent selv</label>
         </div>
 
-        <div>
+        <div class="grid grid-rows-2 my-7">
             <label for="fuldenavn">Fuldenavn:</label>
-            <input type="text" name="fuldenavn" id="fuldenavn">
+            <input type="text" name="fuldenavn" id="fuldenavn" placeholder="Anders Mikkelsen">
         </div>
 
-        <div>
+        <div class="grid grid-rows-2 my-7">
             <label for="adressenavn">Adresse:</label>
-            <input type="text" name="adressenavn" id="adressenavn">
+            <input type="text" name="adressenavn" id="adressenavn" placeholder="Kastanevej 15">
         </div>
 
-        <div>
+        <div class="grid grid-rows-2 my-7">
             <label for="email">E-mail:</label>
-            <input type="text" name="email" id="email">
+            <input type="text" name="email" id="email" placeholder="andersmikkelsen@gamil.com">
         </div>
 
-        <div>
+        <div class="grid-cols-6 my-7 ">
             <span>Postnummer og bynavn:</span>
             <label for="postnummer"></label>
-            <input type="text" name="post" id="postnummer">
-
-            <label for="by"></label>
-            <input type="text" name="bynavn" id="by">
+            <input type="text" name="post" id="postnummer" placeholder="2730" class="col-span-4">
+            <input type="text" name="bynavn" id="by" placeholder="Herlev" class="col-span-2">
         </div>
 
-        <div>
+        <div class="grid grid-rows-2 my-7">
             <label for="telnummer">Telefon:</label>
-            <input type="tel" name="telnummer" id="telnummer">
+            <input type="tel" name="telnummer" id="telnummer" placeholder="62638465">
         </div>
 
-        <div>
+        <div class=" my-7">
+			<input type="checkbox" name="check" id="check">
             <label for="check">Ja tak til nyhedsbreve og tilbud</label>
-            <input type="checkbox" name="check" id="check">
         </div>
 
-        <div>
-            <button>Submit</button>
-        </div>
-
+        <div class="flex justify-end">
+           	<Button variant="second" size="lille">Til betaling</Button>
+		</div>
+	
+</div>
     </form>
-	</div>
 </section>
 
 </MainLayout>
+
+<script>
+	import {inView} from "motion";
+
+// hele anmeldese section 
+const name2left = document.querySelector(".name2left");
+
+inView (name2left, () => {
+	name2left.classList.add("animate__animated", "animate__fadeInLeft");
+});
+
+// boxen 
+const boxen = document.querySelector(".boxen");
+
+inView (boxen, () => {
+	boxen.classList.add("animate__animated", "animate__lightSpeedInLeft");
+});
+
+</script>
+
